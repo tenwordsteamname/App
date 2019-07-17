@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "943847556418",
+    "firebase_url": "https://sunrinton2019.firebaseio.com",
+    "project_id": "sunrinton2019",
+    "storage_bucket": "sunrinton2019.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943847556418:android:20c92384d04be20f",
+        "android_client_info": {
+          "package_name": "ten.words.teamname"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943847556418-sn4o7gv0pv8moucg7s87beep23nrri44.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ten.words.teamname",
+            "certificate_hash": "3162df8871e255b6f3e543b0f47700ec1a3358a3"
+          }
+        },
+        {
+          "client_id": "943847556418-cp8jd7d7tdvrfs81dtv1v3pves9idstl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUTEO5Po0isWLlALjCV2qehA0y3EbGKqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943847556418-cp8jd7d7tdvrfs81dtv1v3pves9idstl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
