@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="270dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:background="#fff"
+    android:id="@+id/drawer_background"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#5c77ff"
+        android:text="지역선택"
+        android:textSize="40sp"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/drawer_rcv"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Detail.DetailActivity">
+
+    <ImageView
+        android:id="@+id/detail_ll3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#2000"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/detail_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detail_kind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="우수청원" />
+
+    <LinearLayout
+        android:id="@+id/detail_ll1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/detail_ll2"
+        app:layout_constraintTop_toBottomOf="@id/detail_back">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/detail_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:textColor="#f7f7f7"
+            tools:text="용산구" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detail_ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintLeft_toRightOf="@id/detail_ll1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_back">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_date" />
+
+        <TextView
+            android:id="@+id/detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:textColor="#f7f7f7"
+            tools:text="2019년 3월 21일" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#f7f7f7"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/detail_ll2"
+        tools:text="1호선 남영역\n출입구 증설 바랍니다." />
+
+    <LinearLayout
+        android:id="@+id/detail_ll4"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/detail_ll3">
+
+        <LinearLayout
+            android:id="@+id/detail_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00d489">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_thumb_up_48_px"
+                android:backgroundTint="#f7f7f7" />
+
+            <TextView
+                android:id="@+id/detail_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:textColor="#f7f7f7"
+                android:textSize="20sp"
+                tools:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.23"
+            android:background="#f55050">
+
+            <TextView
+                android:id="@+id/detail_disagree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:textColor="#f7f7f7"
+                android:textSize="20sp"
+                tools:text="0" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="23dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_thumb_down_48_px"
+                android:backgroundTint="#f7f7f7" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintTop_toBottomOf="@id/detail_ll4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="집가고싶다"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/detail_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:lineHeight="22sp"
+            android:text="청원내용 테스트입니다. 아무거나 적어봤어용. 이제 뭐적을지 모르겠네요"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,43 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
     tools:context=".Activity.Login.LoginActivity">
 
     <LinearLayout
+        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
+        android:orientation="vertical"
+        android:background="@drawable/register_background"
+        android:layout_height="458dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="100dp"
+            android:text="로그인"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_width="match_parent"
-                android:id="@+id/login_id"
-                android:layout_height="wrap_content" />
-            <EditText
-                android:layout_width="match_parent"
-                android:id="@+id/login_pwd"
-                android:layout_height="wrap_content" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="이키계정이 없다면?" />
+
+
+            <TextView
+                android:id="@+id/login_regis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="가입하기"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
         </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/login_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textSize="20sp" />
+
+
+            <EditText
+                android:id="@+id/login_pwd"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
         <Button
             android:id="@+id/login_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="login"
-            />
-    </LinearLayout>
+            android:layout_gravity="center"
+            android:text="login" />
 
-    <Button
-        android:id="@+id/login_regis"
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="223dp"
+        android:src="@drawable/x4icon"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register"/>
+        android:layout_marginTop="80dp"
+        android:text="모두가 말하는 이슈"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:id="@+id/login_tv"
+        />
+    <ImageView
+        android:layout_below="@id/login_tv"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/thiskey"/>
 
-
-</LinearLayout>
+</RelativeLayout>

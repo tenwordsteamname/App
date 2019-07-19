@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@drawable/background_sqaure"
+    android:backgroundTint="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_location_on" />
+
+        <TextView
+            android:id="@+id/main2_item_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            tools:text="관악구" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/main2_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            tools:text="2019년 03월 21일" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/main2_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        tools:text="1호선 남영역 출입구 증설 바랍니다."
+        android:textSize="20sp"
+         />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/main2_item_img_agree"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_thumb_up_48_px" />
+
+            <TextView
+                android:id="@+id/main2_item_tv_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                tools:text="213"
+                android:textColor="#00d489"
+                android:layout_marginLeft="10dp"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/main2_item_img_disagree"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_thumb_down_48_px" />
+
+            <TextView
+                android:id="@+id/main2_item_tv_disagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#f55050"
+                android:layout_marginLeft="10dp"
+                tools:text="37"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
